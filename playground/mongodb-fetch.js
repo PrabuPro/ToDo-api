@@ -26,9 +26,9 @@ const {MongoClient, ObjectID} = require('mongodb');
     //      console.log('Unable to fetch Todos',err);
     //  });
 
-
+     //count
      db.collection('Todos').find().count().then((count) => {
-          console.log(`Todos Count: ${count}`);
+          console.log(`Todos Count: ${count}`); 
      }, (err) => {
          console.log('Unable to fetch Todos',err);
      });
